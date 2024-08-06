@@ -1,0 +1,195 @@
+*{
+
+padding: 0px;
+margin: 0px;
+font-family: "Edu AU VIC WA NT Hand", cursive;
+
+}
+
+body{
+  background-color: black;
+  color: white
+}
+h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+}
+header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+justify-content: space-between;
+position: sticky;
+top: 0px;
+
+}
+header ul{
+  display: flex;
+  justify-content: space-around;
+}
+header ul li{
+  margin: 20px;
+  list-style: none;
+ 
+}
+header ul li a{
+  text-decoration: none;
+  color: white;
+}
+header ul li a i{
+  margin: 6px;
+}
+
+header ul li a:hover{
+  color: rgb(227, 225, 92);
+  text-shadow: 4px 3px 4px white;
+}
+
+#welcome{
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  color: white;
+  border: 3px double white;
+  padding: 40px;
+ background-color: rgba(192, 125, 37, 0.132);
+}
+span{
+  color: blue;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h1{
+  text-align: center;
+  margin: 20px;
+}
+p,h3{
+  text-align: justify;
+  margin-left: 50px;
+}
+.row1{
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* section service */
+.main{
+  width: 100%;
+  height: 700px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+ 
+}
+.child{
+  width: 280px;
+  height: 600px;
+  background-color: black;
+  margin: 20px;
+  justify-content: center;
+  border: 5px double white;
+  margin: 10px;
+  margin-left: 15px;
+  
+}
+.child1{
+  width: 280px;
+  height: 250px;
+  background-color: black;
+
+}
+.child2{
+  width: 280px;
+  height: 330px;
+  background-color:black;
+ 
+}
+.imgser{
+  width: 250px;
+  height: 250px;
+  margin-left: 15px;
+}
+.para1{
+  text-align: justify;
+  margin-right: 40px;
+ margin: 15px;
+ margin-bottom: 5px;
+
+ 
+}
+
+/* section contact */
+
+table{
+  width: 500px;
+  height: 300px;
+  margin-left: 380px;
+  padding: 20px;
+  margin-top: 70px;
+  
+}
+button{
+   margin: 20px;
+   margin-left: 50%;
+}
+input{
+  background-color: black;
+  border: 0%;
+}
+textarea{
+  background-color: black;
+}
+::placeholder{
+  color: aliceblue;
+}
